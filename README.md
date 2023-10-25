@@ -1,4 +1,9 @@
+
+
 # cmsc388T-web-template
+
+## My changes
+Color background of projects / Profile section
 
 ## Color Family
 Light yellow: #FAF8D4
