@@ -1,13 +1,12 @@
-name: deployment workflow
+name: Clean workflow
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 jobs:
   job-one:
-    name: Deploy
+    name: Clean
     runs-on: ubuntu-latest
     steps:
-      - name: testing
+      - name: testing clean
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -15,5 +14,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd TestRepo
-              git pull
+            unalias rm
+            rm -rf cmsc389T-web-template
