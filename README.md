@@ -1,3 +1,7 @@
+GITHUB: https://hbalickgoodman.github.io/cmsc389T-web-template/
+
+TERPconnect: https://terpconnect.umd.edu/~hbalickg/cmsc389T-web-template/
+
 
 
 # cmsc388T-web-template
