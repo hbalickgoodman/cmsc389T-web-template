@@ -6,14 +6,15 @@ jobs:
     name: Clone
     runs-on: ubuntu-latest
     steps:
-    - name: testing
-      uses: appleboy/ssh-action@master
-      with:
-      
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets .USERNAME }}
-        password: ${{ secrets .PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: |
-          git clone https://github.com/hbalickgoodman/cmsc389T-web-template.git
+      - name: testing
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          script: |
+            cd ../pub
+            git clone https://github.com/hbalickgoodman/cmsc389T-web-template.git
 
