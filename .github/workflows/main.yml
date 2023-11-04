@@ -14,9 +14,6 @@ jobs:
         username: ${{ secrets .USERNAME }}
         password: ${{ secrets .PASSWORD }}
         port: ${{ secrets.PORT }}
-        key: ${{ secrets.PRIVATE_KEY }}
         script: |
-          mkdir testDirectory
-          touch testDirectory/test.txt
-          cd ../pub && git clone https://github.com/hbalickgoodman/cmsc389T-web-template.git
+          git clone https://github.com/hbalickgoodman/cmsc389T-web-template.git
 
