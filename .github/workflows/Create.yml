@@ -1,7 +1,7 @@
 name: clone workflow
 on:
-  workflow_dispatch:	  workflow_dispatch:
-jobs:	jobs:
+  workflow_dispatch:
+jobs:
   job_one:
     name: Clone
     runs-on: ubuntu-latest
